@@ -8,7 +8,7 @@ path = "Lab3\plik.txt"
 f = open(path,"r")
 print(f)
 for line in f:
-    hash_table = f.split("\n")
+    hash_table = line.split("\n")
 for i in range(len(hash_table)):
     if not(hash_table[i].startswith(" ")):
         hash_table2[index] = hash_table[i].split(':',1)
